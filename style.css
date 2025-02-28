@@ -1,3 +1,11 @@
+import SimpleParallax from "simple-parallax-js/vanilla";
+
+@font-face{
+  font-family: 'Campana';
+  font-weight: 400;
+	src: url(font/campana-script-font/CampanaScriptPersonalUseRegular-x3BBj.otf),
+}
+
 .sue-ellen-francisco-regular {
     font-family: "Sue Ellen Francisco", serif;
     font-weight: 400;
@@ -116,8 +124,8 @@
 
   
 
-*{margin: 0;
-padding: 0;}
+*{margin: auto;
+}
 
 
 
@@ -127,11 +135,18 @@ body{
 }
 
 header{
-background-color: brown;
+background-color: ;
+}
+
+nav{
+  background-color:#85331E;
 }
 
 .mots{
     background-color: burlywood;
+    font-family: 'Campana';
+  font-weight: 400;
+	src: url(font/campana-script-font/CampanaScriptPersonalUseRegular-x3BBj.otf),
     font-size: 50px;
     display: grid;
     grid-template-columns: 1fr;
@@ -162,6 +177,15 @@ background-color: brown;
     .div5 { grid-area: 5 / 1 / 6 / 2; 
     justify-self: end;
     }
+
+    .parallax-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    grid-area: 1 / 1 / 3 / 3; 
+    }
+
+
     
 
     .cartouche{
@@ -222,7 +246,7 @@ h3{
     }
     
     .saleeimg { grid-area: 1 / 1 / 3 / 3; 
-    margin-left: -40px;}
+    margin-left: -50px;}
     .saleetext { grid-area: 1 / 3 / 2 / 7; }
     .saleelabel1 { grid-area: 2 / 3 / 3 / 4;
         font-family: 'Poppins', sans-serif;

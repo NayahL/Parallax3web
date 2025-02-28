@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="" href="script.js">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap');
         </style>
@@ -12,18 +13,32 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         </style>
         
+        
             
 </head>
 <body>
     
+
 <header>
-<nav></nav>
+<nav> Check’IT</nav>
 </header>
 
-<section>
-    <h1>Bienvenue en Automne</h1>
-    <img>
-</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simple-parallax-js/5.6.2/simpleParallax.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Initialisation du parallax
+        const image = document.getElementsByClassName('parallax-img');
+        new simpleParallax(image, {
+            scale: 1.8,           // Niveau de zoom
+            delay: .6,            // Délai de l'animation
+            transition: 'cubic-bezier(0,0,0,1)',  // Type de transition
+            overflow: true        // Permet le débordement de l'image
+        });
+    });
+</script>
+
+
 
 <section id="mots listes">
     <div class="mots">
@@ -45,7 +60,7 @@
 <!--<section id="recette">-->
 
 <div class="salee">
-    <div class="saleeimg"> <img src="img/soupe_à_oignon.png" alt="" width="60%"> </div>
+    <div class="parallax-img"> <img src="img/soupe_à_oignon.png" alt="" width="60%"> </div>
     <div class="saleetext"> <h3>Soupe à l'oignon</h3> 
         <p>Une bonne soupe pour se réchauffer, à petit budget</p>
         <h4>Ingrédients :</h4> <p>Oignons jaunes, Beurre, Farine, Bouillon, Vin blanc sec, Pain, Fromage râpé, sel,  poivre , noix de muscade</p> </div>
@@ -58,7 +73,7 @@
 
 
     <div class="salee">
-    <div class="saleeimg"> <img src="img/crêpes_pommes.png" alt="" width="60%"> </div>
+    <div class="parallax-img"> <img src="img/crêpes_pommes.png" alt="" width="60%"> </div>
     <div class="saleetext"> <h3>Crêpes pommes-cannelle-caramel</h3> 
         <p>Pause sucrée </p>
         <h4>Ingrédients :</h4> <p>Oignons jaunes, Beurre, Farine, Bouillon, Vin blanc sec, Pain, Fromage râpé, sel,  poivre , noix de muscade</p> </div>
@@ -69,7 +84,7 @@
  </div>
 
  <div class="salee">
-    <div class="saleeimg"> <img src="img/cinnamon_rolls.png" alt="" width="80%"> </div>
+    <div class="parallax-img"> <img src="img/cinnamon_rolls.png" alt="" width="80%"> </div>
     <div class="saleetext"> <h3>Cinnamon Rolls</h3> 
         <p>Dessert gourmand </p>
         <h4>Ingrédients :</h4> <p>Oignons jaunes, Beurre, Farine, Bouillon, Vin blanc sec, Pain, Fromage râpé, sel,  poivre , noix de muscade</p> </div>
